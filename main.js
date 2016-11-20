@@ -12,8 +12,21 @@ const rl = readline.createInterface({
 });
 
 rl.question('What function do you want to perform? ', (answer) => {
+  var ToDo = []
+
   if (answer=="add"){
-    console.log("You choose add");
+      const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+   r1.question('What do I add? ', (addTo) => {
+     if(addTo = "" | addTo == null) {
+       console.log("ERR")
+     } else {
+       ToDo = addTo;
+       console.log(ToDo)
+     }
+   });
   } else {
     console.log("ERR")
   }
